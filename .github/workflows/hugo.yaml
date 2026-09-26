@@ -23,9 +23,6 @@ concurrency:
 defaults:
   run:
     shell: bash
-caches:
-  images:
-    dir: :cacheDir/images
 jobs:
   build:
     runs-on: ubuntu-latest
