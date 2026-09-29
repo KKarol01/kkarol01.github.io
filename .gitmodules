@@ -1,0 +1,12 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/gohugo-ananke/ananke
+[submodule "hugo-noir"]
+	path = hugo-noir
+	url = https://github.com/prxshetty/hugo-noir
+[submodule "themes/hugo-noir"]
+	path = themes/hugo-noir
+	url = https://github.com/prxshetty/hugo-noir
+[submodule "themes/hugo-dead-simple"]
+	path = themes/hugo-dead-simple
+	url = https://github.com/barklan/hugo-dead-simple
