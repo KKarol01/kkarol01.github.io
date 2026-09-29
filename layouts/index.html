@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    {{ .Content }}
+  </article>
+
+  {{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
+
+  <div class="pa3 pa4-ns w-100 w-90-l mw9 center flex-l flex-row-reverse-l">
+
+    <div class="w-100 w-70-l">
+    {{ $n_posts := $.Param "recent_posts_number"}}
+    <section class="w-100 mw8">
+      <h1 class="f3">Recent articles</h1>
+      {{ range first $n_posts $posts.ByDate.Reverse }}
+        <div class="w-100 mb4 relative">
+          {{ .Render "summary-with-image" }}
+        </div>
+      {{ end }}
+    </section>
+    </div>
+
+    <aside class="w-100 w-30-l pr4-l mb5">
+      <h1 class="f3"><a href="{{ "categories/" | relURL }}" class="link black dim">Categories</a></h1>
+      <div>
+        {{ range site.Taxonomies.categories.Alphabetical }}
+          {{ $term := .Page }}
+          {{ $pages := (where .Pages "Kind" "page").ByDate.Reverse }}
+          {{ with $term }}
+            <div class="w-100 mb3">
+            <article class="pa3 ba b--black-10 br2 bg-white">
+              <h2 class="f4 mt0 mb3">
+                <a href="{{ .RelPermalink }}" class="link black dim">{{ .LinkTitle }}</a>
+                <span class="f6 fw4 gray">({{ len $pages }})</span>
+              </h2>
+              {{ range first 1 $pages }}
+                <div class="w-100 mb3 gray">
+                  <time class="f7 db" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                  <h3 class="f5 fw6 near-black mt1 mb1 lh-title">
+                    <a href="{{ .RelPermalink }}" class="link black dim">{{ .Title }}</a>
+                  </h3>
+                  <!-- <p class="f6 lh-copy mv0">{{ .Summary | truncate 90 }}</p> -->
+                </div>
+              {{ end }}
+              <a href="{{ .RelPermalink }}" class="f6 link dim mid-gray">All in {{ .Title }} &rarr;</a>
+            </article>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </aside>
+
+  </div>
+{{ end }}

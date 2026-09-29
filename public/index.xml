@@ -10,6 +10,64 @@
 		
 		
 		
+			<lastBuildDate>Mon, 28 Sep 2026 10:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Cascaded Shadow Maps Without the Shimmer</title>
+				<link>http://localhost:1313/posts/2026/rendering/shadows/cascaded-shadow-maps/</link>
+				<pubDate>Mon, 28 Sep 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/rendering/shadows/cascaded-shadow-maps/</guid>
+				<description>&lt;p&gt;A single shadow map can&amp;rsquo;t cover a large outdoor scene at a useful resolution.&#xA;Cascaded shadow maps split the view frustum into slices, each with its own map.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>SIMD by Hand: Vectorizing a Dot Product</title>
+				<link>http://localhost:1313/posts/2026/lowlevel/simd/simd-intro/</link>
+				<pubDate>Sun, 27 Sep 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/lowlevel/simd/simd-intro/</guid>
+				<description>&lt;p&gt;The compiler auto-vectorizes a lot, but not everything. Writing one kernel by&#xA;hand is the fastest way to learn what it can and can&amp;rsquo;t do for you.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Designing a Compact G-Buffer for Deferred Shading</title>
+				<link>http://localhost:1313/posts/2026/rendering/deferred/gbuffer-layout/</link>
+				<pubDate>Fri, 25 Sep 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/rendering/deferred/gbuffer-layout/</guid>
+				<description>&lt;p&gt;Deferred shading trades memory bandwidth for flexible lighting. The G-buffer is&#xA;where that bandwidth goes, so every byte per pixel counts.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>False Sharing: When Your Threads Fight Over a Cache Line</title>
+				<link>http://localhost:1313/posts/2026/lowlevel/cache-lines/false-sharing/</link>
+				<pubDate>Sun, 20 Sep 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/lowlevel/cache-lines/false-sharing/</guid>
+				<description>&lt;p&gt;Two threads, two counters, zero shared state — and yet the program runs slower&#xA;than the single-threaded version. The culprit is almost always &lt;strong&gt;false sharing&lt;/strong&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Branchless Code and the Branch Predictor</title>
+				<link>http://localhost:1313/posts/2026/lowlevel/branch-prediction/branchless/</link>
+				<pubDate>Mon, 10 Aug 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/lowlevel/branch-prediction/branchless/</guid>
+				<description>&lt;p&gt;A mispredicted branch costs roughly 15–20 cycles on a modern core. On&#xA;unpredictable data that adds up quickly, which is why &amp;ldquo;branchless&amp;rdquo; tricks exist.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>GPU-Driven Frustum Culling with Compute Shaders</title>
+				<link>http://localhost:1313/posts/2026/rendering/compute/gpu-culling/</link>
+				<pubDate>Sun, 05 Jul 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/rendering/compute/gpu-culling/</guid>
+				<description>&lt;p&gt;Once a scene has tens of thousands of objects, CPU culling and draw submission&#xA;become the bottleneck. Moving both to the GPU removes that bottleneck.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Memory allocator</title>
+				<link>http://localhost:1313/posts/2026/lowlevel/memory-allocators/memory-allocator/</link>
+				<pubDate>Sun, 15 Mar 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/lowlevel/memory-allocators/memory-allocator/</guid>
+				<description>&lt;p&gt;some data about memory allocators.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Vulkan Initialization Pipeline</title>
+				<link>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</link>
+				<pubDate>Sun, 15 Mar 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</guid>
+				<description>&lt;p&gt;Vulkan initialization requires explicit device enumeration and queue family queries&amp;hellip;&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "hugo", "runtimeExecutable": "hugo", "runtimeArgs": ["server", "-p", "1313", "--renderToMemory"], "port": 1313 }
+  ]
+}

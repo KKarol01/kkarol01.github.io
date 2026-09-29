@@ -1,3 +1,18 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kkarol01.github.io/'
 locale = 'en-us'
 title = 'My New Hugo Project'
+theme = 'ananke'
+
+[params]
+  mainSections = ['posts']
+  recent_posts_number = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[menus]
+  [[menus.main]]
+    name = 'Categories'
+    pageRef = '/categories'
+    weight = 10
