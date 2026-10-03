@@ -2,103 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2026/rendering/vulkan/setting_up/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2026/rendering/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/2026/rendering/shadows/cascaded-shadow-maps/</loc>
     <lastmod>2026-09-28T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/csm/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/glsl/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/rendering/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/rendering/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2026/rendering/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/shadows/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-09-28T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/avx2/</loc>
-    <lastmod>2026-09-27T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
-    <lastmod>2026-09-27T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cpu/</loc>
-    <lastmod>2026-09-27T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/low-level/</loc>
-    <lastmod>2026-09-27T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2026/lowlevel/</loc>
-    <lastmod>2026-09-27T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/simd/</loc>
     <lastmod>2026-09-27T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2026/lowlevel/simd/simd-intro/</loc>
     <lastmod>2026-09-27T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/deferred/</loc>
-    <lastmod>2026-09-25T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2026/rendering/deferred/gbuffer-layout/</loc>
     <lastmod>2026-09-25T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/gbuffer/</loc>
-    <lastmod>2026-09-25T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vulkan/</loc>
-    <lastmod>2026-09-25T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cache/</loc>
-    <lastmod>2026-09-20T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/concurrency/</loc>
-    <lastmod>2026-09-20T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2026/lowlevel/cache-lines/false-sharing/</loc>
     <lastmod>2026-09-20T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/branch-prediction/</loc>
-    <lastmod>2026-08-10T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2026/lowlevel/branch-prediction/branchless/</loc>
     <lastmod>2026-08-10T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/performance/</loc>
-    <lastmod>2026-08-10T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/compute/</loc>
-    <lastmod>2026-07-05T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/culling/</loc>
-    <lastmod>2026-07-05T10:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2026/rendering/compute/gpu-culling/</loc>
+    <lastmod>2026-07-05T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</loc>
     <lastmod>2026-07-05T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2026/lowlevel/memory-allocators/memory-allocator/</loc>
     <lastmod>2026-03-15T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</loc>
-    <lastmod>2026-03-15T10:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

@@ -1,23 +1,17 @@
 {{ define "main" }}
 
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
-    {{ .Content }}
-  </article>
-
   {{ $posts := where site.RegularPages "Section" "in" site.Params.mainSections }}
-
   <div class="pa3 pa4-ns w-100 w-90-l mw9 center flex-l flex-row-reverse-l">
 
     <div class="w-100 w-70-l">
-    {{ $n_posts := $.Param "recent_posts_number"}}
-    <section class="w-100 mw8">
-      <h1 class="f3">Recent articles</h1>
-      {{ range first $n_posts $posts.ByDate.Reverse }}
-        <div class="w-100 mb4 relative">
-          {{ .Render "summary-with-image" }}
-        </div>
-      {{ end }}
-    </section>
+      {{ $n_posts := $.Param "recent_posts_number"}}
+      <section class="w-100 mw8">
+        {{ range first $n_posts $posts.ByDate.Reverse }}
+          <div class="w-100 mb4 relative">
+            {{ .Render "summary-with-image" }}
+          </div>
+        {{ end }}
+      </section>
     </div>
 
     <aside class="w-100 w-30-l pr4-l mb5">
@@ -51,4 +45,15 @@
     </aside>
 
   </div>
+
+  <section class="mh6">
+    <ul class="list flex flex-wrap">
+      {{ range site.Taxonomies.tags.ByCount }}
+        <li class="mr2 mb2">
+          <a class="f6 black dim pill" href="{{.Page.RelPermalink}}">{{.Page.LinkTitle}} <span>({{.Count}})</span></a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+
 {{ end }}

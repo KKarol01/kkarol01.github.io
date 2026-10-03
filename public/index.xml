@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>My New Hugo Project</title>
+		<title>Karol&#39;s Blog</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content on My New Hugo Project</description>
+		<description>Recent content on Karol&#39;s Blog</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
 		
-			<lastBuildDate>Mon, 28 Sep 2026 10:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Quick Vulkan Setup</title>
+				<link>http://localhost:1313/posts/2026/rendering/vulkan/setting_up/</link>
+				<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/rendering/vulkan/setting_up/</guid>
+				<description>&lt;p&gt;A reference for setting up Vulkan 1.3 with vk-bootstrap, volk and VMA; creating a logical device, retrieving a graphics queue and initializing a memory allocator.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Cascaded Shadow Maps Without the Shimmer</title>
 				<link>http://localhost:1313/posts/2026/rendering/shadows/cascaded-shadow-maps/</link>
@@ -56,18 +63,18 @@
 				<description>&lt;p&gt;Once a scene has tens of thousands of objects, CPU culling and draw submission&#xA;become the bottleneck. Moving both to the GPU removes that bottleneck.&lt;/p&gt;</description>
 			</item>
 			<item>
+				<title>GPU-Driven Frustum Culling with Compute Shaders</title>
+				<link>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</link>
+				<pubDate>Sun, 05 Jul 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</guid>
+				<description>&lt;p&gt;Vulkan initialization requires explicit device enumeration and queue family queries&amp;hellip;&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>Memory allocator</title>
 				<link>http://localhost:1313/posts/2026/lowlevel/memory-allocators/memory-allocator/</link>
 				<pubDate>Sun, 15 Mar 2026 10:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/posts/2026/lowlevel/memory-allocators/memory-allocator/</guid>
 				<description>&lt;p&gt;some data about memory allocators.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Vulkan Initialization Pipeline</title>
-				<link>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</link>
-				<pubDate>Sun, 15 Mar 2026 10:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026/rendering/vulkan/pipeline/</guid>
-				<description>&lt;p&gt;Vulkan initialization requires explicit device enumeration and queue family queries&amp;hellip;&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

@@ -1,6 +1,6 @@
 baseURL = 'https://kkarol01.github.io/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = "Karol's Blog"
 theme = 'ananke'
 
 [params]
@@ -10,9 +10,3 @@ theme = 'ananke'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-
-[menus]
-  [[menus.main]]
-    name = 'Categories'
-    pageRef = '/categories'
-    weight = 10
