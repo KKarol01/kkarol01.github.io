@@ -10,6 +10,22 @@
 		
 		
 		
+			<lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Rendering</title>
+				<link>http://localhost:1313/categories/rendering/</link>
+				<pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/categories/rendering/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Low Level</title>
+				<link>http://localhost:1313/categories/low-level/</link>
+				<pubDate>Sun, 27 Sep 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/categories/low-level/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>
