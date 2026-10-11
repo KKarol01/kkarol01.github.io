@@ -3,7 +3,6 @@ title: "Quick Vulkan Setup"
 date: 2026-10-01
 draft: false
 description: ""
-tags: ["rendering", "vulkan", "tutorial"]
 ---
 
 A reference for setting up Vulkan 1.3 with vk-bootstrap, volk and VMA; creating a logical device, retrieving a graphics queue and initializing a memory allocator.
@@ -129,7 +128,10 @@ caps.supports_raytracing = phys_ret.is_extension_present(VK_KHR_RAY_TRACING_PIPE
     && phys_ret.is_extension_present(VK_KHR_RAY_QUERY_EXTENSION_NAME);
 ```
 ### Creating the VkDevice object
-Before creating the object itself, you can enable features your application needs:
+Before creating the object itself, you can enable features your application needs. Two of them are worth explaining, because they change how you write the rendering code itself:
+- **Dynamic rendering** --- without it, before drawing anything you have to create a `VkRenderPass` object describing all of your attachments (their formats, load and store operations, and layouts), and a `VkFramebuffer` binding actual image views to it, and every pipeline has to be created against a specific render pass. With dynamic rendering, all of that goes away: you start rendering with [vkCmdBeginRendering](https://docs.vulkan.org/refpages/latest/refpages/source/vkCmdBeginRendering.html), passing the image views and load/store operations right there in the command buffer, and pipelines only need to know the attachment formats, via [VkPipelineRenderingCreateInfo](https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineRenderingCreateInfo.html). It's core since Vulkan 1.3 (the `VK_KHR_dynamic_rendering` extension before that), but the feature still has to be enabled explicitly.
+- **Synchronization2** --- a cleaner version of the barrier and submission API: [vkCmdPipelineBarrier2](https://docs.vulkan.org/refpages/latest/refpages/source/vkCmdPipelineBarrier2.html) and [vkQueueSubmit2](https://docs.vulkan.org/refpages/latest/refpages/source/vkQueueSubmit2.html) keep pipeline stages and access masks together in each barrier, instead of spreading them across function parameters. Also core since 1.3, and also has to be enabled.
+
 ```cpp
 auto synch2_features = VkPhysicalDeviceSynchronization2Features{};
 synch2_features.sType = VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES;
