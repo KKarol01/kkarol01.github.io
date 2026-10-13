@@ -3,6 +3,8 @@ title: "Quick Vulkan Setup"
 date: 2026-10-01
 draft: false
 description: ""
+aliases:
+  - /posts/2026/rendering/vulkan/setting_up/
 ---
 
 A reference for setting up Vulkan 1.3 with vk-bootstrap, volk and VMA; creating a logical device, retrieving a graphics queue and initializing a memory allocator.
