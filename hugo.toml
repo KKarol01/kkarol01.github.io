@@ -6,6 +6,16 @@ theme = 'ananke'
 [params]
   mainSections = ['posts']
   recent_posts_number = 3
+  description = "Technical blog about graphics programming and low-level in general."
+
+[params.ananke.social.follow]
+  networks = ['linkedin', 'github']
+
+[params.ananke.social.linkedin]
+  profilelink = 'https://www.linkedin.com/in/karol-kubicki-68b844346/'
+
+[params.ananke.social.github]
+  username = 'KKarol01'
 
 [caches]
   [caches.images]
